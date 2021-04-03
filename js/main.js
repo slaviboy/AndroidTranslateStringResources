@@ -71,7 +71,7 @@ function checkboxStateChange(e) {
         if ($(e).is(":checked")) selectAllLanguagesCheckboxes()
         else deselectAllLanguagesCheckboxes()
     } else {
- 
+
         // deselect the 'Select All' checkbox
         if (!e.srcElement.checked) {
             $('#selectAll').prop('checked', false)
@@ -299,9 +299,8 @@ function getLanguageJSON(lanaguageIndex) {
     for (let i = 0; i < childrens.length; i++) {
 
         // example if we have the label DOM element <label id="example_name"><div...>Здравей свят!</div></label>
-        const childDOM = getLastChild(childrens[i])
-        const translatedName = childrens[i].id       // "example_name"
-        const translatedText = childDOM.innerHTML    // "Здравей свят!"
+        const translatedName = childrens[i].id                     // "example_name"
+        const translatedText = getChildrenInnerHTML(childrens[i])  // "Здравей свят!"
 
         // we have the original {resources: {string:[{_name: "example_name", __text: "Hello World!" }]}}
         const originalName = jsonClone.resources.string[i]._name  // "example_name"
@@ -313,6 +312,21 @@ function getLanguageJSON(lanaguageIndex) {
         }
     }
     return jsonClone
+}
+
+/**
+ * Function that gets the inner text of the child element of a DOM element
+ * @param {DOM Element} element DOM parent element
+ * @returns string of the inner text from all child element
+ */
+function getChildrenInnerHTML(element) {
+
+    let totalString = ""
+    const childrens = element.children
+    for (let i = 0; i < childrens.length; i++) {
+        totalString += childrens[i].innerText
+    }
+    return totalString
 }
 
 /**
@@ -392,7 +406,6 @@ function generateLanguages() {
 
             const languageJSON = getLanguageJSON(i)
             languageJSONs.push(languageJSON)
-            //console.log(JSON.stringify(languageJSON))
 
             // if we have not reached the last language
             if (i < lanaguageNames.length - 1) {
@@ -539,19 +552,19 @@ function saveZip() {
     for (let i = 0; i < languageJSONs.length; i++) {
 
         const json = languageJSONs[i]
-        let xmlString = new X2JS().json2xml_str(json)
-        xmlString = xmlString.replaceAll("&apos;", "'")
+        let xmlString = new X2JS({ useDoubleQuotes: true }).json2xml_str(json)
+        xmlString = xmlString.replaceAll("&apos;", "\\'")
 
         const abbreviation = checkedCheckboxesIds[i]
         const folder = zip.folder(abbreviation)
-        folder.file("strings.xml", beautify(xmlString));
+        folder.file("strings.xml", xmlString);
     }
 
     // save the zip file
     zip.generateAsync({ type: "blob" }).then(function (content) {
 
         // using the fileSaverJS library
-        saveAs(content, "example.zip");
+        saveAs(content, "resources.zip");
     });
 }
 
