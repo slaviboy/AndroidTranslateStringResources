@@ -1,0 +1,414 @@
+{
+    "en": {
+        "googleName": "English",
+        "displayName": "English (English)"
+    },
+    "af": {
+        "googleName": "Afrikaans",
+        "displayName": "Afrikaans (Afrikaans)"
+    },
+    "sq": {
+        "googleName": "Albanian",
+        "displayName": "Albanian (Shqiptar)"
+    },
+    "am": {
+        "googleName": "Amharic",
+        "displayName": "Amharic (አማርኛ)"
+    },
+    "ar": {
+        "googleName": "Arabic",
+        "displayName": "Arabic (عربى)"
+    },
+    "hy": {
+        "googleName": "Armenian",
+        "displayName": "Armenian (հայերեն)"
+    },
+    "az": {
+        "googleName": "Azerbaijani",
+        "displayName": "Azerbaijani (Azərbaycan)"
+    },
+    "eu": {
+        "googleName": "Basque",
+        "displayName": "Basque (Euskal)"
+    },
+    "be": {
+        "googleName": "Belarusian",
+        "displayName": "Belarusian (Беларускі)"
+    },
+    "bn": {
+        "googleName": "Bengali",
+        "displayName": "Bengali (বাঙালি)"
+    },
+    "bs": {
+        "googleName": "Bosnian",
+        "displayName": "Bosnian (Bosanski)"
+    },
+    "bg": {
+        "googleName": "Bulgarian",
+        "displayName": "Bulgarian (Български)"
+    },
+    "ca": {
+        "googleName": "Catalan",
+        "displayName": "Catalan (Català)"
+    },
+    "ceb": {
+        "googleName": "Cebuano",
+        "displayName": "Cebuano (Cebuano)"
+    },
+    "zh": {
+        "googleName": "Chinese (Simplified)",
+        "displayName": "Chinese Simplified (简体中文)"
+    },
+    "zh-tw": {
+        "googleName": "Chinese (Traditional)",
+        "displayName": "Chinese Traditional (中國傳統的)"
+    },
+    "co": {
+        "googleName": "Corsican",
+        "displayName": "Corsican (Corsu)"
+    },
+    "hr": {
+        "googleName": "Croatian",
+        "displayName": "Croatian (Hrvatski)"
+    },
+    "cs": {
+        "googleName": "Czech",
+        "displayName": "Czech (čeština)"
+    },
+    "da": {
+        "googleName": "Danish",
+        "displayName": "Danish (Dansk)"
+    },
+    "nl": {
+        "googleName": "Dutch",
+        "displayName": "Dutch (Nederlands)"
+    },
+    "eo": {
+        "googleName": "Esperanto",
+        "displayName": "Esperanto (Esperanto)"
+    },
+    "et": {
+        "googleName": "Estonian",
+        "displayName": "Estonian (Eesti keel)"
+    },
+    "fi": {
+        "googleName": "Finnish",
+        "displayName": "Finnish (Suomalainen)"
+    },
+    "fr": {
+        "googleName": "French",
+        "displayName": "French (Français)"
+    },
+    "fy": {
+        "googleName": "Frisian",
+        "displayName": "Frisian (Frysk)"
+    },
+    "gl": {
+        "googleName": "Galician",
+        "displayName": "Galician (Galego)"
+    },
+    "ka": {
+        "googleName": "Georgian",
+        "displayName": "Georgian (ქართული)"
+    },
+    "de": {
+        "googleName": "German",
+        "displayName": "German (Deutsche)"
+    },
+    "el": {
+        "googleName": "Greek",
+        "displayName": "Greek (Ελληνικά)"
+    },
+    "gu": {
+        "googleName": "Gujarati",
+        "displayName": "Gujarati (ગુજરાતી)"
+    },
+    "ht": {
+        "googleName": "HaitianCreole",
+        "displayName": "Haitian Creole (Kreyòl Ayisyen)"
+    },
+    "ha": {
+        "googleName": "Hausa",
+        "displayName": "Hausa (Hausa)"
+    },
+    "haw": {
+        "googleName": "Hawaiian",
+        "displayName": "Hawaiian (Ōlelo Hawaiʻi)"
+    },
+    "iw": {
+        "googleName": "Hebrew",
+        "displayName": "Hebrew (עברית)"
+    },
+    "hi": {
+        "googleName": "Hindi",
+        "displayName": "Hindi (हिंदी)"
+    },
+    "hmn": {
+        "googleName": "Hmong",
+        "displayName": "Hmong (Hmoob)"
+    },
+    "hu": {
+        "googleName": "Hungarian",
+        "displayName": "Hungarian (Magyar)"
+    },
+    "is": {
+        "googleName": "Icelandic",
+        "displayName": "Icelandic (Íslensku)"
+    },
+    "ig": {
+        "googleName": "Igbo",
+        "displayName": "Igbo (Igbo)"
+    },
+    "id": {
+        "googleName": "Indonesian",
+        "displayName": "Indonesian (bahasa Indonesia)"
+    },
+    "ga": {
+        "googleName": "Irish",
+        "displayName": "Irish (Gaeilge)"
+    },
+    "it": {
+        "googleName": "Italian",
+        "displayName": "Italian (italiano)"
+    },
+    "ja": {
+        "googleName": "Japanese",
+        "displayName": "Japanese (日本人)"
+    },
+    "jv": {
+        "googleName": "Javanese",
+        "displayName": "Javanese (Wong Jawa)"
+    },
+    "kn": {
+        "googleName": "Kannada",
+        "displayName": "Kannada (ಕನ್ನಡ)"
+    },
+    "kk": {
+        "googleName": "Kazakh",
+        "displayName": "Kazakh (Қазақша)"
+    },
+    "km": {
+        "googleName": "Khmer",
+        "displayName": "Khmer (ភាសាខ្មែរ)"
+    },
+    "ko": {
+        "googleName": "Korean",
+        "displayName": "Korean (한국어)"
+    },
+    "ku": {
+        "googleName": "Kurdish",
+        "displayName": "Kurdish (Kurmanji)"
+    },
+    "ky": {
+        "googleName": "Kyrgyz",
+        "displayName": "Kyrgyz (Кыргызча)"
+    },
+    "lo": {
+        "googleName": "Lao",
+        "displayName": "Lao (ລາວ)"
+    },
+    "la": {
+        "googleName": "Latin",
+        "displayName": "Latin (Latine)"
+    },
+    "lv": {
+        "googleName": "Latvian",
+        "displayName": "Latvian (Latviešu valoda)"
+    },
+    "lt": {
+        "googleName": "Lithuanian",
+        "displayName": "Lithuanian (Lietuvių)"
+    },
+    "lb": {
+        "googleName": "Luxembourgish",
+        "displayName": "Luxembourgish (Lëtzebuergesch)"
+    },
+    "mk": {
+        "googleName": "Macedonian",
+        "displayName": "Macedonian (Македонски)"
+    },
+    "mg": {
+        "googleName": "Malagasy",
+        "displayName": "Malagasy (Malagasy)"
+    },
+    "ms": {
+        "googleName": "Malay",
+        "displayName": "Malay (Melayu)"
+    },
+    "ml": {
+        "googleName": "Malayalam",
+        "displayName": "Malayalam (മലയാളം)"
+    },
+    "mt": {
+        "googleName": "Maltese",
+        "displayName": "Maltese (Malti)"
+    },
+    "mi": {
+        "googleName": "Maori",
+        "displayName": "Maori (Maori)"
+    },
+    "mr": {
+        "googleName": "Marathi",
+        "displayName": "Marathi (मराठी)"
+    },
+    "mn": {
+        "googleName": "Mongolian",
+        "displayName": "Mongolian (Монгол хэл)"
+    },
+    "my": {
+        "googleName": "Myanmar (Burmese)",
+        "displayName": "Myanmar (မြန်မာ (ဗမာ))"
+    },
+    "ne": {
+        "googleName": "Nepali",
+        "displayName": "Nepali (नेपाली)"
+    },
+    "no": {
+        "googleName": "Norwegian",
+        "displayName": "Norwegian (norsk)"
+    },
+    "ny": {
+        "googleName": "Chichewa",
+        "displayName": "Chichewa (Chichewa)"
+    },
+    "ps": {
+        "googleName": "Pashto",
+        "displayName": "Pashto (پښتو)"
+    },
+    "fa": {
+        "googleName": "Persian",
+        "displayName": "Persian (فارسی)"
+    },
+    "pl": {
+        "googleName": "Polish",
+        "displayName": "Polish (Polskie)"
+    },
+    "pt": {
+        "googleName": "Portuguese",
+        "displayName": "Portuguese (Português)"
+    },
+    "ro": {
+        "googleName": "Romanian",
+        "displayName": "Romanian (Română)"
+    },
+    "ru": {
+        "googleName": "Russian",
+        "displayName": "Russian (Русский)"
+    },
+    "sm": {
+        "googleName": "Samoan",
+        "displayName": "Samoan (Samoa)"
+    },
+    "gd": {
+        "googleName": "ScotsGaelic",
+        "displayName": "Scots Gaelic (Gàidhlig na h-Alba)"
+    },
+    "sr": {
+        "googleName": "Serbian",
+        "displayName": "Serbian (Српски)"
+    },
+    "st": {
+        "googleName": "Sesotho",
+        "displayName": "Sesotho (Sesotho)"
+    },
+    "sn": {
+        "googleName": "Shona",
+        "displayName": "Shona (Shona)"
+    },
+    "sd": {
+        "googleName": "Sindhi",
+        "displayName": "Sindhi (سنڌي)"
+    },
+    "si": {
+        "googleName": "Sinhala",
+        "displayName": "Sinhala (සිංහල)"
+    },
+    "sk": {
+        "googleName": "Slovak",
+        "displayName": "Slovak (Slovenský)"
+    },
+    "sl": {
+        "googleName": "Slovenian",
+        "displayName": "Slovenian (Slovenščina)"
+    },
+    "so": {
+        "googleName": "Somali",
+        "displayName": "Somali (Somali)"
+    },
+    "es": {
+        "googleName": "Spanish",
+        "displayName": "Spanish (Español)"
+    },
+    "su": {
+        "googleName": "Sundanese",
+        "displayName": "Sundanese (Sunda)"
+    },
+    "sw": {
+        "googleName": "Swahili",
+        "displayName": "Swahili (Kiswahili)"
+    },
+    "sv": {
+        "googleName": "Swedish",
+        "displayName": "Swedish (Svenska)"
+    },
+    "tl": {
+        "googleName": "Filipino",
+        "displayName": "Filipino (Filipino)"
+    },
+    "tg": {
+        "googleName": "Tajik",
+        "displayName": "Tajik (Тоҷикӣ)"
+    },
+    "ta": {
+        "googleName": "Tamil",
+        "displayName": "Tamil (தமிழ்)"
+    },
+    "te": {
+        "googleName": "Telugu",
+        "displayName": "Telugu (తెలుగు)"
+    },
+    "th": {
+        "googleName": "Thai",
+        "displayName": "Thai (ไทย)"
+    },
+    "tr": {
+        "googleName": "Turkish",
+        "displayName": "Turkish (Türk)"
+    },
+    "uk": {
+        "googleName": "Ukrainian",
+        "displayName": "Ukrainian (Українська)"
+    },
+    "ur": {
+        "googleName": "Urdu",
+        "displayName": "Urdu (اردو)"
+    },
+    "uz": {
+        "googleName": "Uzbek",
+        "displayName": "Uzbek (O/'zbek)"
+    },
+    "vi": {
+        "googleName": "Vietnamese",
+        "displayName": "Vietnamese (Tiếng Việt)"
+    },
+    "cy": {
+        "googleName": "Welsh",
+        "displayName": "Welsh (Cymraeg)"
+    },
+    "xh": {
+        "googleName": "Xhosa",
+        "displayName": "Xhosa (isiXhosa)"
+    },
+    "yi": {
+        "googleName": "Yiddish",
+        "displayName": "Yiddish (ייִדיש)"
+    },
+    "yo": {
+        "googleName": "Yoruba",
+        "displayName": "Yoruba (Yorùbá)"
+    },
+    "zu": {
+        "googleName": "Zulu",
+        "displayName": "Zulu (Zulu)"
+    }
+}

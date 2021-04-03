@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/logo.svg">
+    <title>Android Resource Translate</title>
+
+    <!-- Bootstrap and Local CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Bootstrap and jQuery JS files -->
+    <script src="./lib/jquery-1.11.0.min.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- 
+        ---------------------------------------------------------------------------------------------------------------------
+         | Main JS Libraries:
+        ---------------------------------------------------------------------------------------------------------------------
+         | *fileSaver.js        => library for saving files https://github.com/eligrey/FileSaver.js/
+         | *jszip.js            => library for generating ZIP files  https://github.com/Stuk/jszip
+         | *xml2json.js         => library for converting XML to JSON and vice versa https://github.com/abdolence/x2js
+         | *translate.google..  => library for getting the Google translate elements
+         | *main.js             => main script file that controlls everything for the web page
+         | *beautify.js         => library for beautify, the final XML code
+        ---------------------------------------------------------------------------------------------------------------------
+    -->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./lib/fileSaver.js"></script>
+    <script src="./lib/jszip.js"></script>
+    <script src="./lib/xml2json.js"></script>
+    <script src="./lib/beautify.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Link to my GitHub page -->
+    <img id="logo" src="./img/logo.svg" />
+
+    <!-- Link to my GitHub page -->
+    <a href="https://github.com/slaviboy">
+        <img id="github" src="./img/github.svg" />
+    </a>
+
+    <div class="notranslate">
+
+        <!-- Top Box with the two text elements and the 'Open File' button -->
+        <div class="p-5 text-center bg-light">
+            <h1 class="mb-3">Translate Android string resource file into multiple languages</h1>
+            <h4 class="mb-3">(Choose a xml file from your computer)</h4>
+            <div>
+                <input class="btn btn-primary" type="button" value="Open File" onclick="openFile()">
+                <img id="xmlImage" src="./img/check.svg" style="display:none; width: 20px; margin-left: 20px;" />
+                <h11 id="xmlText" class="mb-3" style="display:none;">string.xml</h11>
+            </div>
+        </div>
+
+        <!-- Top Box for error messages -->
+        <div id="errorMsg" class="collapse">
+            <div class="alert alert-danger alert-dismissible fade show text-center m-3" role="alert">
+                <strong>Wrong file format!</strong> Only XML files are supported, please chose the right file.
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </div>
+
+        <!-- seprator -->
+        <hr />
+
+        <!-- Box where the checkbox for the different languages checkboxs are hold -->
+        <div id="languagesBox" class="cards" style="width: 95%; "></div>
+
+        <!-- seprator -->
+        <hr />
+
+        <!-- Bottom Box where the success message is positioned -->
+        <div id="successMsg" class="collapse">
+            <div class="alert alert-success alert-dismissible fade show text-center m-3" role="alert">
+                <strong>Congratulation!</strong> You have successfully converted your resource string file.
+                <button type="button" class="btn-close" aria-label="Close" onclick="collapseSuccessMsg()"></button>
+            </div>
+            <hr />
+        </div>
+
+
+        <!-- 'Select All' cehckbox -->
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="selectAll"
+                    onclick="checkboxStateChange(this);">
+                <label class="form-check-label" for="selectAll">
+                    SELECT ALL
+                </label>
+            </div>
+        </div>
+
+        <!-- Golden progressbar :D -->
+        <div id="progressbarBox" class="progress collapse">
+            <div id="progressbar" class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 0%">0%
+            </div>
+        </div>
+
+        <!-- 'Download' button -->
+        <button id="downloadButton" onclick="download()" class="btn" style="width:100%; margin-top: 10px;" disabled>
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+
+        <!-- 'Cancel' button -->
+        <button id="cancelButton" onclick="cancel()" class="btn-cancel"
+            style="display:none; width:100%; margin-top:10px;">
+            Cancel
+        </button>
+
+    </div>
+
+    <!-- Google Web Page translate element -->
+    <div style="margin-top: 20px; ">
+        <div style="float: left;" id="google_translate_element" class="disabledbutton"></div>
+        <div style="white-space: nowrap; float: left; margin-left: 20px; font-size: 10px;">Hello World!
+        </div>
+    </div>
+
+    <!-- Paragraph, where the created label elements, that match the settings.xml file are created
+         and are later automaticcaly translated from Google, and their translated values are retrieved -->
+    <p id="elementsHolderBox"></p>
+
+    <!-- File input responsible for opening the XML files -->
+    <input id="fileInput" type="file" class="hidden" accept=".xml" style="display: none;">
+
+</body>
+
+</html>
