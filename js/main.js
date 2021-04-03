@@ -556,7 +556,7 @@ function saveZip() {
         xmlString = xmlString.replaceAll("&apos;", "\\'")
 
         const abbreviation = checkedCheckboxesIds[i]
-        const folder = zip.folder(abbreviation)
+        const folder = zip.folder('values-' + abbreviation)
         folder.file("strings.xml", xmlString);
     }
 
