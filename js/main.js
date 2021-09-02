@@ -365,6 +365,24 @@ function capitalizeSentence(originalString, translatedString, language) {
 }
 
 /**
+ * Method to select particular languages from the array
+ */
+function selectMostUsedLanguages() {
+
+    let l = ["ar", "bg", "de", "el", "es",
+        "fr", "hi", "it", "ja", "ko", "pt", "ru",
+        "tr", "zh"]
+
+    $(".form-check-input").each(function () {
+        let id = $(this).attr('id')
+        if (l.includes(id)) { 
+            $(this).prop('checked', true)
+        }
+    })
+    $('#downloadButton').prop('disabled', false)
+}
+
+/**
  * Function for changing the current language, with included check
  * @param {Number} i index of the language
  */
